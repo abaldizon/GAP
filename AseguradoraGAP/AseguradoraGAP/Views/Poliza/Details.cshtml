@@ -1,0 +1,82 @@
+﻿@model AseguradoraGAP.Models.PolizaModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PolizaModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipoCobertura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipoCobertura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cobertura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cobertura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.inicioVigencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.inicioVigencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.periodo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.periodo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.riesgo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.riesgo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { @Id = item.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
