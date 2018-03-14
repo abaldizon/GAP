@@ -1,39 +1,39 @@
 ﻿@model IEnumerable<AseguradoraGAP.Models.PolizaModel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Polizas Disponibles";
 }
 
-<h2>Index</h2>
+<h2>Polizas Disponibles</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Crear Poliza Nueva", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.nombre)
+            Nombre
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.descripcion)
+            Descripcion
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.tipoCobertura)
+            Tipo Cobertura
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.cobertura)
+            Cobertura
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.inicioVigencia)
+            Inicio Vigencia
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.periodo)
+            Periodo
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.precio)
+            Precio
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.riesgo)
+            Riesgo
         </th>
         <th></th>
     </tr>
@@ -65,9 +65,9 @@
             @Html.DisplayFor(modelItem => item.riesgo)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { @Id = item.Id }) |
-            @Html.ActionLink("Details", "Details", new { @Id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { @Id = item.Id })
+            @Html.ActionLink("Editar", "Edit", new { @Id = item.Id }) |
+            @Html.ActionLink("Detalles", "Details", new { @Id=item.Id }) |
+            @Html.ActionLink("Eliminar", "Delete", new { @Id = item.Id })
         </td>
     </tr>
 }
