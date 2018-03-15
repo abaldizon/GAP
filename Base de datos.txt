@@ -1,0 +1,17 @@
+Desarrollada en mongo
+Base de datps: Seguros
+Objetos: Polizas,Clientes
+
+Ejemplo Polizas
+{'nombre':'terremoto','descripcion':'poliza de casa para desastre natural','tipoCobertura':'terremoto','cobertura':'100','inicioVigencia':'','periodo':'3','precio':'100000','riesgo':'medio'}
+{'nombre':'incendio','descripcion':'poliza de casa','tipoCobertura':'incendio','cobertura':'100','inicioVigencia':'','periodo':'3','precio':'100000','riesgo':'medio'}
+{'nombre':'robo','descripcion':'poliza de casa','tipoCobertura':'terremoto','cobertura':'100','inicioVigencia':'','periodo':'3','precio':'100000','riesgo':'medio'}
+
+Ejemplo Clientes
+{'cliente':'Andres Baldizon','Seguros':[terremoto,incendio,robo]}
+{'cliente':'Daniel Ortega','Seguros':[incendio]}
+{'cliente':'Diego Soto','Seguros':[robo]}
+{'cliente':'Laura Vargas','Seguros':[incendio,robo]}
+
+
+**No se ahondo en el diseno de la base de datos ya que la asignacion no parecia darle importancia a este aspecto
