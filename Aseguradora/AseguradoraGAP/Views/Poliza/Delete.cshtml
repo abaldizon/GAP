@@ -1,0 +1,87 @@
+﻿@model AseguradoraGAP.Models.PolizaModel
+
+@{
+    ViewBag.Title = "Eliminar Poliza";
+}
+
+<h2>Eliminar Poliza</h2>
+
+<h3>¿Esta seguro de eliminar esta poliza?</h3>
+<div>    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Nombre
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            Descripcion
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+        <dt>
+            Tipo Cobertura
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipoCobertura)
+        </dd>
+
+        <dt>
+            Cobertura
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cobertura)
+        </dd>
+
+        <dt>
+            Inicio de Vigencia
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.inicioVigencia)
+        </dd>
+
+        <dt>
+            Periodo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.periodo)
+        </dd>
+
+        <dt>
+            Precio
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precio)
+        </dd>
+
+        <dt>
+            Riesgo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.riesgo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Volver a la lista", "Index")
+        </div>
+    }
+</div>
