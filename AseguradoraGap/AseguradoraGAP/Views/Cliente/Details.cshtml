@@ -1,0 +1,35 @@
+﻿@model AseguradoraGAP.Models.ClienteModel
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ClienteModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seguros)
+        </dt>
+
+        <dd>
+            @Html.ListBoxFor(model => model.Seguros,new SelectList(Model.Seguros))
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { Model.Id }) |
+    @Html.ActionLink("Volver", "Index")
+</p>
